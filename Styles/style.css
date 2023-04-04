@@ -4,13 +4,28 @@ body{
 .sectionup{
     background-color: #e43134;
     width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectionup__text{
+    
 }
 .sectionup__a{
-    width: 15%;
+    width: 100%
+
+}
+.sectionup__img{
+
+  
+
 
 }
 .navbar__ul{
     display: flex;
+    justify-content: space-between;
     
     list-style: none;
 
