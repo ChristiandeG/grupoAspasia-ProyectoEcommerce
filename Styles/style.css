@@ -1,0 +1,43 @@
+body{
+    width: 100%;
+}
+.sectionup{
+    background-color: #e43134;
+    width: 100%;
+}
+.sectionup__a{
+    width: 15%;
+
+}
+.navbar__ul{
+    display: flex;
+    
+    list-style: none;
+
+}
+.navbar__ul__enlace{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Esenciales */
+.mb{
+    border: blue solid 2px;
+}
+.mr{
+    border: red solid 2px;
+}
+.sectionup__img{
+
+    width: 100%;
+    object-fit: cover;
+
+
+}
