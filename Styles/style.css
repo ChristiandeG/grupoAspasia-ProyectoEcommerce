@@ -8,14 +8,14 @@ body{
     background-color: #E43134;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;  
 }
 h1{
     font-family: 'Evolitta';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.22em;
@@ -27,11 +27,12 @@ h1{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     padding-right: 20px;
 }
 
 .header__img{
-    width: 40px;
+    width: 20px;
     object-fit: cover;
     border: 3px solid #252525;
     border-radius: 300px;
@@ -48,8 +49,8 @@ h1{
     justify-content: space-between;
 }
 .nav__logo{
-    width: 400px;
-    margin-left: 20px;
+    width: 300px;
+    
 }
 .nav__menu{
     width: 60%;
@@ -59,7 +60,6 @@ h1{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
 }
 .nav__menu__li{
     display: flex;
@@ -166,6 +166,9 @@ h1{
     flex-flow: column wrap;
     flex-direction: center;
     align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
 }
 .slider__text1{
     border-bottom:#E43134 solid 3px;
@@ -434,6 +437,131 @@ h1{
 .secction3__box2__box4 p:hover{
     color: #252525
 }
+.secction5__line{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+/* Caracteristicas de las resenas */
+.resenas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(228, 49, 52, 0.2);
+
+    
+  }
+  
+  /*Caja que engloba las 3 cajas*/
+  .resenas__divmaster{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 3%;
+      width: 74%;
+    
+  }
+  /*Caja de principal de la reseña*/
+  .resenas__box1{
+      display: flex;
+      flex: 1 0;
+      height: 250px;
+      flex-direction: column;
+      background-color: ghostwhite;
+      border-radius: 20px;
+      border-color: 2px solid white;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 25%);
+      justify-content: space-around;
+      align-content: center;
+      padding: 15px;
+      margin: 2%;
+  }
+  h2{
+    font-family: 'Evolitta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 20px;
+    border-bottom: #E43134 solid 4px;
+  }
+  /*Caja de la parte superior de la reseña--Foto--Nombre--Estrella*/
+  .resenas__box1__box1{
+      display: flex;
+      flex:1;
+      width: 100%;
+      padding: 1%;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+    /*Caja de la parte inferior de la reseña--Texto*/
+    .resenas__box1__box2{
+        display:flex;
+        border-radius: 10px;
+        flex: 1;
+        background: rgba(228, 49, 52, 0.2);
+        padding: 12px;
+        border: #E43134 solid 1px;
+      
+  }
+  /*Caja interior parte de arriba--Nombre__fecha*/
+  .resenas__boxtext{
+      display: flex;
+      width: 45%;
+      flex-direction: column;
+  }
+  /*Caja interior superior--Nombre*/
+  .resenas__box1__text1{
+      display: flex;
+  }  
+  /*Caja interior superior--Fecha*/
+  .resenas__box1__text2{
+      color: var(--fourth-color);
+      
+  }
+  /*Caja interior superio--Estrellas grupo*/
+  .resenas__box1__star{
+      width: 30%;
+      padding-right: 30px;
+      display: flex;
+      justify-content: center;
+  }
+  /*Estrella individual*/
+  .material-symbols-outlined{
+      display: flex;
+      justify-content: flex-start;
+      color: orange;
+  }
+  
+  /*Tamaño de la foto*/
+  .img {
+      object-fit: cover;
+      width: 70px;
+      height: 70px;
+      border-radius: 60%;
+  }
+  .font1 {
+      font-family:  var(--font-alegreya);
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+/* Caracteristicas del footer */
+.footer__line{
+    width: 100%;
+    background-color: #E43134;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 
 /* Esenciales */
 .mb{
