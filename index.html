@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>EOS</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
         <div class="nav__line mb">
             <a href="index.html"><img src="Img/Logo.png" class="nav__logo mr" alt="logo"/></a>
             <ul class="nav__menu mr">
-                <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace"><strong>Nosotr@s</strong></a></li>
+                <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace .nav__menu__li__fijo"><strong>Nosotr@s</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/eventos.html" class="mr nav__menu__enlace"><strong>Eventos</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/asesoria.html" class="mr nav__menu__enlace"><strong>Asesoría</strong></a></li>
                 <li class="nav__menu__li nav__menu__enlace dropdown"><strong>Shop</strong></a>
@@ -41,6 +42,24 @@
             </ul>
         </div>
     </nav>
+        <div class="burguer mr">
+            <span class="material-symbols-outlined dropdown">
+                menu
+                <ul class="nav__menu mr dropdown-content">
+                    <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace .nav__menu__li__fijo"><strong>Nosotr@s</strong></a></li>
+                    <li class="nav__menu__li"><a href="Enlaces/eventos.html" class="mr nav__menu__enlace"><strong>Eventos</strong></a></li>
+                    <li class="nav__menu__li"><a href="Enlaces/asesoria.html" class="mr nav__menu__enlace"><strong>Asesoría</strong></a></li>
+                    <li class="nav__menu__li nav__menu__enlace dropdown"><strong>Shop</strong></a>
+                        <ul class="dropdown-content">
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Consoladores</strong></a></li>
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Dildos</strong></a></li>
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Penes</strong></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__menu__li"><a href="Enlaces/contacto.html" class="mr nav__menu__enlace"><strong>Contacto</strong></a></li>
+                </ul>
+            </span>
+        </div>
     <section class="secction1 mb">
         <div class="secction1__text secction1__text__left mr"><p><strong>Hasta</strong></p></div>
         <div class="secction1__text secction1__text__center mr"><p><strong>60%</strong></p></div>
@@ -233,9 +252,6 @@
             </div>
         </div>
 
-    </footer>
-
-
-    
+    </footer> 
 </body>
 </html>
