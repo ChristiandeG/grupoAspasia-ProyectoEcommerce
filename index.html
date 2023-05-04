@@ -28,32 +28,32 @@
         <div class="nav__line mb">
             <a href="index.html"><img src="Img/Logo.png" class="nav__logo mr" alt="logo"/></a>
             <ul class="nav__menu mr">
-                <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace .nav__menu__li__fijo"><strong>Nosotr@s</strong></a></li>
+                <li class="nav__menu__li  nav__menu__li__fijo"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace"><strong>Inicio</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/eventos.html" class="mr nav__menu__enlace"><strong>Eventos</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/asesoria.html" class="mr nav__menu__enlace"><strong>Asesoría</strong></a></li>
                 <li class="nav__menu__li nav__menu__enlace dropdown"><strong>Shop</strong></a>
                     <ul class="dropdown-content">
-                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Consoladores</strong></a></li>
-                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Dildos</strong></a></li>
-                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Penes</strong></a></li>
+                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Para el</strong></a></li>
+                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Para ella</strong></a></li>
+                        <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Parejas</strong></a></li>
                     </ul>
                 </li>
                 <li class="nav__menu__li"><a href="Enlaces/contacto.html" class="mr nav__menu__enlace"><strong>Contacto</strong></a></li>
             </ul>
         </div>
     </nav>
-        <div class="burguer mr">
-            <span class="material-symbols-outlined dropdown">
+        <div class="burguer dropdown1 mg">
+            <span class="material-symbols-outlined">
                 menu
-                <ul class="nav__menu mr dropdown-content">
+                <ul class="nav__menu mr dropdown-content2">
                     <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace .nav__menu__li__fijo"><strong>Nosotr@s</strong></a></li>
                     <li class="nav__menu__li"><a href="Enlaces/eventos.html" class="mr nav__menu__enlace"><strong>Eventos</strong></a></li>
                     <li class="nav__menu__li"><a href="Enlaces/asesoria.html" class="mr nav__menu__enlace"><strong>Asesoría</strong></a></li>
-                    <li class="nav__menu__li nav__menu__enlace dropdown"><strong>Shop</strong></a>
-                        <ul class="dropdown-content">
-                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Consoladores</strong></a></li>
-                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Dildos</strong></a></li>
-                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Penes</strong></a></li>
+                    <li class="nav__menu__li nav__menu__enlace dropdown2"><strong>Shop</strong></a>
+                        <ul class="dropdown-content1 mg">
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Para el</strong></a></li>
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Para ella</strong></a></li>
+                            <li><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Parejas</strong></a></li>
                         </ul>
                     </li>
                     <li class="nav__menu__li"><a href="Enlaces/contacto.html" class="mr nav__menu__enlace"><strong>Contacto</strong></a></li>
@@ -230,7 +230,7 @@
         <div class="secction5__line mb">
             <a href="index.html"><img src="Img/Logo.png" class="nav__logo mr" alt="logo"/></a>
             <ul class="nav__menu mr">
-                <li class="nav__menu__li"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace"><strong>Nosotr@s</strong></a></li>
+                <li class="nav__menu__li nav__menu__li__fijo"><a href="Enlaces/nosotr@s.html" class="mr nav__menu__enlace"><strong>Inicio</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/eventos.html" class="mr nav__menu__enlace"><strong>Eventos</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/asesoria.html" class="mr nav__menu__enlace"><strong>Asesoría</strong></a></li>
                 <li class="nav__menu__li"><a href="Enlaces/shop.html" class="mr nav__menu__enlace"><strong>Shop</strong></a></li>
@@ -253,5 +253,33 @@
         </div>
 
     </footer> 
+
+    <script>
+    //Se crea una "bandera" para que la ventana solo se abra 1 vez
+    var bandera = false;
+    // Se hace una escucha de la ventana tipo scroll
+    window.addEventListener('scroll', function(e) {
+    //Se obtiene la posicion de desplazamiento
+    var y = window.scrollY;
+    //Se guarda esa posicion en la consola
+    console.log(y);
+    //Se mete en el if cuando scrolleas
+    if (y > 1350 && !bandera) {
+        setTimeout(function() {
+        // Abre una nueva ventana de dimension determinada. Si se cumple
+        var popup = window.open("Enlaces/contacto.html", "Popup", "width=500,height=527");
+        // Se desplaza hasta el sitio indicado
+        popup.moveTo(650, 300);
+
+        // Tiempo que tarda en abrirse y en cerrarse
+        setTimeout(function() {
+            popup.close();
+        }, 500000);
+    }, 1000);
+    //Cambiamos el estado de la bandera para que la ventan solo se abra 1 vez
+    bandera = true;
+    } 
+    });
+    </script>
 </body>
 </html>

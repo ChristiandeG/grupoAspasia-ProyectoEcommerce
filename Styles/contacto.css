@@ -1,0 +1,82 @@
+body{
+    background: url(../Img/fiesta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+.box1 div{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 9px #000000;
+    font-family: 'Evolitta';
+    font-style: normal;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box1 div p{
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    color: #E43134;
+    text-shadow: 2px 2px 9px #E43134;
+}
+.container{
+    background-color: #E43134;
+    opacity: 0.8;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.elem-group{
+    z-index: 4;
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 2px 2px 9px #000000;
+    font-family: 'Evolitta';
+    font-style: normal;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: #E43134;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: #E43134;
+    color: #FFFFFF;
+}
+button:
+   
+
+/* Esenciales *
+.mb{
+    border: blue solid 2px;
+}
+.mr{
+    border: red solid 2px;
+}
+.mg{
+    border: green solid 2px;
+}
